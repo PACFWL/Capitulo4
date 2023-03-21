@@ -25,36 +25,8 @@ programação, selecionando videoaulas, referência bibliográficas, para melhor
 - RU02 - Consultas - Informa sobre as informações cadastradas no sistema e que podem ser buscadas.
 - RU03 - Gerenciamentos – Excluir e atualizar dados e informações a respeito dos desaparecidos, funcionarios e volúntarios cadastrados.
 
-##### Sprint Backlog
-> Cada requisito tem um identificador único de maneira que seja possível rastrear a necessidade do cliente com a implementação do software.
-| Identificador | Descrição | Prioridade |
-| ------------ | ------------------------------------------------------------------------ | ------|
-| REQ01 - Cadastrar desaparecido | Como – Funcionario, Eu quero – fazer o cadastro, De maneira que – Armazene o seu registro
-| REQ02 - Consultar desaparecido| Como – Funcionario, Eu quero – fazer a consulta, De maneira que – Verificar seus dados 
-| REQ03 - Atualizar desaparecido | Como – Funcionario, Eu quero – Atualizar os dados de um desaparecido , De maneira que – corrija alguma informação incongruente e atualize os dados
-| REQ04 - Excluir desaparecido | Como – Funcionario, Eu quero – Excluir o cadastro do Desaparecido, De maneira que – o registro seja excluindo permanentemente
-| REQ05 - Cadastrar funcionário | Como – Funcionário, Eu quero – Cadastrar informações do funcionário, De maneira que – os funcionarios possam acessar o Sistema e gerenciar os registros de desaparecidos
-| REQ06 - Consultar funcionário | Como – Funcionário, Eu quero – Visualizar os dados do funcionário, De maneira que – possa visualizar o nome, cpf, matricula e outros dados references ao funcionario
-| REQ07 - Atualizar funcionário | Como – Funcionário, Eu quero – Atualizar os dados do funcionário, De maneira que – corrija dados inconsistentes e atualize os registros
-| REQ08 - Excluir funcionário | Como – Funcionário, Eu quero – Exclusão dos dados do funcionário, De maneira que – apenas exclua o registro do funcionario da Lista de funcionarios
-| REQ09 - Cadastrar voluntario | Como – Funcionário, Eu quero – Incluir um cadastro de voluntario, De maneira que – possa me tornar Voluntario e colaborar na procurar de pessoas desaparecidas
-| REQ010 - Atualizar voluntario | Como – Funcionário, Eu quero – Visualizar os dados do funcionário, De maneira que – possa visualizar o nome, cpf, matricula e outros dados references ao funcionario
-| REQ011 - Excluir voluntario | Como – Funcionário, Eu quero – Visualizar os dados do funcionário, De maneira que – possa visualizar o nome, cpf, matricula e outros dados references ao funcionario
-
-
-##### Definição de pronto
-> O sprint será considerado concluido quando:
-> 1) Os casos de teste de aceitação forem executados e obtiverem 100% de satisfatorios. Os casos de teste (CT) são rastreáveis para os requisiitos (REQ). O elo de rastreabilidade
-é estabelecido pelo identificador do caso de teste.
-> 2) Depois de executado os casos de teste com 100% de satisfatorios o código deve ser armazenado no github (commit).
-##### Casos de teste
-| Identificador | Cenário de uso |
-| ------------ | ------------------------------------------------------------------------ |
-| REQ01CT01 | Dado (setup) que o CPF do cliente não está cadastrado; Quando (ação) o usuário confirma o cadastro; Então (resultado esperado) o sistema envia uma mensagem de cadastro realizado com sucesso |
-| REQ01CT02 | Dado (setup) que o CPF do cliente está cadastrado; Quando (ação) o usuário confirma o cadastro; Então (resultado esperado) o sistema rejeita e envia uma mensagem de dados inválidos |
->
 O modelo de dominio (Larman, 2006 - classes conceituais ou classes de negócio) foi definido considerando as seguintes classes:
-![modelo de dominio](https://user-images.githubusercontent.com/68782201/160412338-54c2c974-d6d2-4ab6-bea5-e1137a6f7e6c.jpg)
+![image](https://user-images.githubusercontent.com/91156801/226623866-20e3464b-2be1-4315-b6e2-3efdbedb9467.png)
 A arquitetura segue uma abordagem orientada a serviços. Os serviços foram classificados em três tipos (ERL, 2007):
 - **1. Serviços utilitários**. Implementam funcionalidades comuns a vários tipos de aplicações, como, por exemplo: log, notificação, transformação de informações. Um exemplo de serviço utilitário é um serviço de conversão de moeda que
 poderá ser acessado para calcular a conversão de uma moeda (por exemplo, dólares) para outra (por exemplo, euros).
